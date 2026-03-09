@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "sapphire-star-armaments",
+	"version": "${version}",
+	"name": "Sapphire Star Armaments",
+	"description": "The Hunter's Guild arrive alongside their mighty workshop! Become the Sapphire Star and expand your arsenal with an expanding weapon roster from the Monster Hunter franchise! Enjoy the core mechanics of each weapon accompanied by original Minecraft-inspired weapon designs.",
+
+	"authors": [
+		"vitosos"
+	],
+	"contact": {
+		"homepage": "https://www.instagram.com/vitosos._/",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/sapphire-star-armaments/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"vitosos.sapphireweapons.SapphireStarArmaments"
+		],
+		"client": [
+			"vitosos.sapphireweapons.SapphireStarArmamentsClient"
+		]
+	},
+	"mixins": [
+		"sapphire-star-armaments.mixins.json",
+		{
+			"config": "sapphire-star-armaments.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"geckolib": "*",
+		"player-animator": "*"
+	}
+}

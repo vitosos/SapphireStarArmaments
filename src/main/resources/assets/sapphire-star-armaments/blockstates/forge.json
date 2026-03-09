@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "facing=north,is_foundry=false": { "model": "sapphire-star-armaments:block/forge_anvil" },
+    "facing=east,is_foundry=false":  { "model": "sapphire-star-armaments:block/forge_anvil", "y": 90 },
+    "facing=south,is_foundry=false": { "model": "sapphire-star-armaments:block/forge_anvil", "y": 180 },
+    "facing=west,is_foundry=false":  { "model": "sapphire-star-armaments:block/forge_anvil", "y": 270 },
+
+    "facing=north,is_foundry=true": { "model": "sapphire-star-armaments:block/forge_foundry" },
+    "facing=east,is_foundry=true":  { "model": "sapphire-star-armaments:block/forge_foundry", "y": 90 },
+    "facing=south,is_foundry=true": { "model": "sapphire-star-armaments:block/forge_foundry", "y": 180 },
+    "facing=west,is_foundry=true":  { "model": "sapphire-star-armaments:block/forge_foundry", "y": 270 }
+  }
+}

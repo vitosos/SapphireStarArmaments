@@ -1,0 +1,19 @@
+{
+	"required": true,
+	"package": "vitosos.sapphireweapons.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"PlayerMobilityMixin",
+		"PlayerCombatMixin",
+		"PlayerEssenceMixin",
+		"PlayerStorageMixin",
+		"EnchantmentMixin",
+		"SlotAccessor"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

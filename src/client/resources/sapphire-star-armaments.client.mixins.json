@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"package": "vitosos.sapphireweapons.mixin.client",
+	"compatibilityLevel": "JAVA_17",
+	"client": [
+		"AbstractClientPlayerEntityMixin",
+		"ItemRendererMixin",
+		"SplashTextResourceSupplierMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

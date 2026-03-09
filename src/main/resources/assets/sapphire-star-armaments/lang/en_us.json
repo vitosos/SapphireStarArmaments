@@ -1,0 +1,88 @@
+{
+  "_section1": "UI and Others",
+
+  "tag.item.sapphire-star-armaments.sapphire_workshop": "Workshop Weapons",
+  "tag.item.sapphire-star-armaments.forging_materials": "Forging Materials",
+  "tag.item.sapphire-star-armaments.allowed_in_item_box": "Item Box Items",
+
+  "itemGroup.sapphire-star-armaments.sapphire_workshop": "Sapphire Workshop Weapons (SSA)",
+  "itemGroup.sapphire-star-armaments.mob_materials": "Materials (SSA)",
+  "itemGroup.sapphire-star-armaments.tools_and_consumables": "Tools & Consumables (SSA)",
+
+  "block.sapphire-star-armaments.item_box": "Item Box",
+  "block.sapphire-star-armaments.guild_stock_box": "Guild Stock Box",
+  "block.sapphire-star-armaments.forge": "Sapphire Star Forge",
+
+
+  "_section2": "Weapons",
+
+  "item.sapphire-star-armaments.iron_glaive": "Iron Glaive",
+  "item.sapphire-star-armaments.iron_glaive.desc.1": "The first Insect Glaive, forged using  ores from these lands. ",
+  "item.sapphire-star-armaments.iron_glaive.desc.2": "Sturdy and hard hitting.",
+  "item.sapphire-star-armaments.iron_glaive.desc.3": "Allows it's user to engage in aerial combat.",
+  "item.sapphire-star-armaments.iron_glaive.desc.4": "Empowered by essence with a Kinsect on the off-hand.",
+
+  "item.sapphire-star-armaments.diamond_glaive": "Diamond Glaive",
+  "item.sapphire-star-armaments.diamond_glaive.desc.1": "A sharper and sturdier Insect Glaive,",
+  "item.sapphire-star-armaments.diamond_glaive.desc.2": "forged using one of the strongest materials from these lands. ",
+  "item.sapphire-star-armaments.diamond_glaive.desc.3": "Allows it's user to engage in aerial combat.",
+  "item.sapphire-star-armaments.diamond_glaive.desc.4": "Empowered by essence with a Kinsect on the off-hand.",
+
+  "item.sapphire-star-armaments.netherite_glaive": "Netherite Glaive",
+  "item.sapphire-star-armaments.netherite_glaive.desc.1": "The strongest Insect Glaive this land and neighboring ",
+  "item.sapphire-star-armaments.netherite_glaive.desc.2": "dimensions raw materials can offer.",
+  "item.sapphire-star-armaments.netherite_glaive.desc.3": "Allows it's user to engage in aerial combat.",
+  "item.sapphire-star-armaments.netherite_glaive.desc.4": "Empowered by essence with a Kinsect on the off-hand.",
+
+  "item.sapphire-star-armaments.phantom_glaive": "Oneiros Kontos",
+  "item.sapphire-star-armaments.phantom_glaive.desc.1": "An Insect Glaive that feels impossibly light, ",
+  "item.sapphire-star-armaments.phantom_glaive.desc.2": "making it nimbler and faster that any other.",
+  "item.sapphire-star-armaments.phantom_glaive.desc.3": "Allows it's user to engage in aerial combat.",
+  "item.sapphire-star-armaments.phantom_glaive.desc.4": "Empowered by essence with a Kinsect on the off-hand.",
+
+  "item.sapphire-star-armaments.spider_glaive": "Arachne",
+  "item.sapphire-star-armaments.spider_glaive.desc.1": "An Insect Glaive forged channeling the primal strengths ",
+  "item.sapphire-star-armaments.spider_glaive.desc.2": "of arachnids, spreading a venomous blight on it's adversaries.",
+  "item.sapphire-star-armaments.spider_glaive.desc.3": "Allows it's user to engage in aerial combat.",
+  "item.sapphire-star-armaments.spider_glaive.desc.4": "Empowered by essence with a Kinsect on the off-hand.",
+
+  "item.sapphire-star-armaments.blaze_glaive": "Lúincelthchair",
+  "item.sapphire-star-armaments.blaze_glaive.desc.1": "A fiery Insect Glaive, wielding hell-spawned power,",
+  "item.sapphire-star-armaments.blaze_glaive.desc.2": "setting ablaze whatever comes its way.",
+  "item.sapphire-star-armaments.blaze_glaive.desc.3": "Allows it's user to engage in aerial combat.",
+  "item.sapphire-star-armaments.blaze_glaive.desc.4": "Empowered by essence with a Kinsect on the off-hand.",
+
+  "item.sapphire-star-armaments.kinsect": "Mauldrone",
+
+  "_section3": "Materials",
+
+  "item.sapphire-star-armaments.primal_gland": "Primal Gland",
+  "item.sapphire-star-armaments.primal_gland.desc": "A strong venom sac harvested from a Spider.",
+
+  "item.sapphire-star-armaments.arachnid_hide": "Arachnid Hide",
+  "item.sapphire-star-armaments.arachnid_hide.desc": "Tough, bristly skin that can be woven into gear.",
+
+  "item.sapphire-star-armaments.preserved_eye": "Preserved Eye",
+  "item.sapphire-star-armaments.preserved_eye.desc": "A fresh eye that seems to follow your movements.",
+
+  "item.sapphire-star-armaments.spectral_spine": "Spectral Spine",
+  "item.sapphire-star-armaments.spectral_spine.desc": "A lightweight spine that barely holds physical form.",
+
+  "item.sapphire-star-armaments.ghostly_wingarm": "Ghostly Wingarm",
+  "item.sapphire-star-armaments.ghostly_wingarm.desc": "You can't feel it's texture, but it's cold to the touch.",
+
+  "item.sapphire-star-armaments.dream_core": "Dream Core",
+  "item.sapphire-star-armaments.dream_core.desc": "The swirling night sky can be seen inside of it.",
+
+  "item.sapphire-star-armaments.warm_ash": "Warm Ash",
+  "item.sapphire-star-armaments.warm_ash.desc": "Ashes left by a Blaze, who even after death, gives it warmth.",
+
+  "item.sapphire-star-armaments.ignition_rod": "Ignition Rod",
+  "item.sapphire-star-armaments.ignition_rod.desc": "Lightweight and sturdy, you can tell it's about to catch fire.",
+
+  "item.sapphire-star-armaments.flame_soul": "Flame Soul",
+  "item.sapphire-star-armaments.flame_soul.desc": "A fragment of fire, said to be what drives a Blaze.",
+
+  "_section4": "Subtitles",
+  "sound.sapphire-star-armaments.item_box_open": "Item Box opens"
+}

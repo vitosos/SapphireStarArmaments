@@ -1,0 +1,8 @@
+{
+  "item_box_open": {
+    "subtitle": "sound.sapphire-star-armaments.item_box_open",
+    "sounds": [
+      "sapphire-star-armaments:block/item_box_open"
+    ]
+  }
+}

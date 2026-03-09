@@ -79,17 +79,6 @@ public class InsectGlaiveItem extends SwordItem {
 
         if (!attacker.getWorld().isClient() && isValidTarget && attacker instanceof IInsectGlaiveUser glaiveUser) {
             glaiveUser.grantEssence(2); // Grants Orange
-
-            // --- DEBUG LOGS (Fixed for Action Bar) ---
-            if (attacker instanceof PlayerEntity player) {
-                double currentDmg = player.getAttributeValue(EntityAttributes.GENERIC_ATTACK_DAMAGE);
-                double currentSpd = player.getAttributeValue(EntityAttributes.GENERIC_ATTACK_SPEED);
-
-                // Set to 'true' so it displays neatly above the hotbar!
-                player.sendMessage(Text.literal(
-                        String.format("§8[Debug] Attack Speed: %.2f | Damage: %.2f", currentSpd, currentDmg)
-                ), true);
-            }
         }
 
         return super.postHit(stack, target, attacker);

@@ -168,6 +168,12 @@ public class KinsectEntity extends ThrownItemEntity implements GeoEntity {
         }));
     }
 
+    // --- COMPLETELY IGNORE WATER DRAG ---
+    @Override
+    public boolean isTouchingWater() {
+        return false;
+    }
+
     @Override
     public AnimatableInstanceCache getAnimatableInstanceCache() {
         return this.cache;

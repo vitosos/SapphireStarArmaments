@@ -5,7 +5,8 @@
 	"client": [
 		"AbstractClientPlayerEntityMixin",
 		"ItemRendererMixin",
-		"SplashTextResourceSupplierMixin"
+		"SplashTextResourceSupplierMixin",
+		"PlayerConsumableAnimMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

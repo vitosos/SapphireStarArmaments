@@ -22,19 +22,19 @@ public class ModLootTableModifiers {
             if (SPIDER_ID.equals(id)) {
                 tableBuilder.pool(LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.50f))
+                        .conditionally(RandomChanceLootCondition.builder(0.40f))
                         .with(ItemEntry.builder(ModItems.ARACHNID_HIDE))
                         .build());
 
                 tableBuilder.pool(LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.30f))
+                        .conditionally(RandomChanceLootCondition.builder(0.15f))
                         .with(ItemEntry.builder(ModItems.PRIMAL_GLAND))
                         .build());
 
                 tableBuilder.pool(LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.05f))
+                        .conditionally(RandomChanceLootCondition.builder(0.03f))
                         .with(ItemEntry.builder(ModItems.PRESERVED_EYE))
                         .build());
             }
@@ -43,19 +43,19 @@ public class ModLootTableModifiers {
             if (PHANTOM_ID.equals(id)) {
                 tableBuilder.pool(LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.50f))
+                        .conditionally(RandomChanceLootCondition.builder(0.40f))
                         .with(ItemEntry.builder(ModItems.SPECTRAL_SPINE))
                         .build());
 
                 tableBuilder.pool(LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.20f))
+                        .conditionally(RandomChanceLootCondition.builder(0.15f))
                         .with(ItemEntry.builder(ModItems.GHOSTLY_WINGARM))
                         .build());
 
                 tableBuilder.pool(LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.05f))
+                        .conditionally(RandomChanceLootCondition.builder(0.03f))
                         .with(ItemEntry.builder(ModItems.DREAM_CORE))
                         .build());
             }
@@ -64,19 +64,19 @@ public class ModLootTableModifiers {
             if (BLAZE_ID.equals(id)) {
                 tableBuilder.pool(LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.50f))
+                        .conditionally(RandomChanceLootCondition.builder(0.40f))
                         .with(ItemEntry.builder(ModItems.WARM_ASH))
                         .build());
 
                 tableBuilder.pool(LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.20f))
+                        .conditionally(RandomChanceLootCondition.builder(0.15f))
                         .with(ItemEntry.builder(ModItems.IGNITION_ROD))
                         .build());
 
                 tableBuilder.pool(LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(RandomChanceLootCondition.builder(0.05f))
+                        .conditionally(RandomChanceLootCondition.builder(0.03f))
                         .with(ItemEntry.builder(ModItems.FLAME_SOUL))
                         .build());
             }

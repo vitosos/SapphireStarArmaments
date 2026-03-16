@@ -1,0 +1,26 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"glaive_hold": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [0, -12.5, 0]
+				},
+				"right_arm": {
+					"rotation": [-129.57033, -6.18137, -0.68688]
+				},
+				"left_arm": {
+					"rotation": [-172.52822, -0.65182, 4.95744]
+				},
+				"torso": {
+					"rotation": [0, -12.5, 0]
+				},
+				"right_item": {
+					"rotation": [315.47425, -42.16009, -90.347],
+					"position": [-5, 1, 1]
+				}
+			}
+		}
+	}
+}

@@ -10,4 +10,7 @@ public interface ISapphirePlayerData {
     int getSapphirePoints();
     void setSapphirePoints(int points);
     void addSapphirePoints(int amount);
+
+    long getLastCantineTime();
+    void setLastCantineTime(long time);
 }

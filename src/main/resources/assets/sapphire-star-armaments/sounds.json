@@ -4,5 +4,12 @@
     "sounds": [
       "sapphire-star-armaments:block/item_box_open"
     ]
+  },
+  "hunter_prepare": {
+    "category": "ui",
+    "subtitle": "cantine.sapphire-star-armaments.hunter_prepare",
+    "sounds": [
+      "sapphire-star-armaments:ui/hunter_prepare"
+    ]
   }
 }

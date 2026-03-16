@@ -55,12 +55,19 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemGroup.sapphire-star-armaments.tools_and_consumables"))
                     .icon(() -> new ItemStack(ModBlocks.FORGE)) // Using the Forge as the tab's icon!
                     .entries((displayContext, entries) -> {
-                        // Add your custom blocks here!
                         entries.add(ModBlocks.FORGE);
                         entries.add(ModBlocks.ITEM_BOX);
                         entries.add(ModBlocks.GUILD_STOCK_BOX);
+                        entries.add(ModItems.HUNTER_POTION);
+                        entries.add(ModItems.MEGA_POTION);
+                        entries.add(ModItems.MAX_POTION);
+                        entries.add(ModItems.ANCIENT_POTION);
+                        entries.add(ModItems.LIFEPOWDER);
+                        entries.add(ModItems.DUST_OF_LIFE);
+                        entries.add(ModItems.DEMON_POWDER);
+                        entries.add(ModItems.HARDSHELL_POWDER);
 
-                        // You can add your future potions, whetstones, or food items down here later!
+
                     }).build());
 
     public static void register() {

@@ -37,6 +37,9 @@ public abstract class PlayerMobilityMixin implements IInsectGlaiveUser {
             if (this.vaultWindupTicks == 0) {
                 if ((player.isOnGround() && player.getVelocity().y <= 0) || player.isTouchingWater()) {
                     this.isVaulting = false;
+                    if (!player.getWorld().isClient() && player instanceof net.minecraft.server.network.ServerPlayerEntity serverPlayer) {
+                        vitosos.sapphireweapons.network.ServerNetworking.broadcastAnimation(serverPlayer, "clear");
+                    }
                 }
             }
         }

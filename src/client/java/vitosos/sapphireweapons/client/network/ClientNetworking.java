@@ -7,6 +7,7 @@ import net.minecraft.util.Identifier;
 import vitosos.sapphireweapons.client.animation.ClientAnimationHelper;
 import vitosos.sapphireweapons.network.ServerNetworking;
 import vitosos.sapphireweapons.util.IInsectGlaiveUser;
+import vitosos.sapphireweapons.util.ISapphirePlayerData;
 
 public class ClientNetworking {
 
@@ -57,7 +58,17 @@ public class ClientNetworking {
                         if (client.world != null) {
                             net.minecraft.entity.Entity entity = client.world.getEntityById(targetEntityId);
                             if (entity instanceof AbstractClientPlayerEntity targetPlayer) {
-                                ClientAnimationHelper.playCustomAnimation(targetPlayer, animationName);
+
+                                // If the server says "clear", wipe their layer!
+                                if (animationName.equals("clear")) {
+                                    if (targetPlayer instanceof vitosos.sapphireweapons.client.animation.ISapphireAnimatedPlayer sapphirePlayer) {
+                                        dev.kosmx.playerAnim.api.layered.ModifierLayer<dev.kosmx.playerAnim.api.layered.IAnimation> layer = sapphirePlayer.getSapphireLayer();
+                                        if (layer != null) layer.setAnimation(null);
+                                    }
+                                } else {
+                                    ClientAnimationHelper.playCustomAnimation(targetPlayer, animationName);
+                                }
+
                             }
                         }
                     });
@@ -99,6 +110,17 @@ public class ClientNetworking {
                     for (int i = 0; i < size; i++) {
                         box.setStack(i, stacks.get(i));
                     }
+                }
+            });
+        });
+
+        // Catch the Cantine Timer from the server
+        ClientPlayNetworking.registerGlobalReceiver(ServerNetworking.SYNC_CANTINE_PACKET, (client, handler, buf, responseSender) -> {
+            long lastCantineTime = buf.readLong();
+
+            client.execute(() -> {
+                if (client.player != null) {
+                    ((ISapphirePlayerData) client.player).setLastCantineTime(lastCantineTime);
                 }
             });
         });

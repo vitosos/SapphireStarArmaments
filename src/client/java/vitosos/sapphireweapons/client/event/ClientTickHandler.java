@@ -76,7 +76,8 @@ public class ClientTickHandler {
             // --- ATTACK LOGIC ---
             int maxAerialChains = client.player.getMainHandStack().getItem() == vitosos.sapphireweapons.registry.ModItems.PHANTOM_GLAIVE ? 6 : 3;
 
-            if (attackJustPressed && isActivelyUsingGlaive) {
+            // --- KINSECT LAUNCH LOGIC ---
+            if (ClientKeybinds.fireKinsectKey.wasPressed() && holdingGlaiveInHand) {
                 ItemStack offHandStack = client.player.getOffHandStack();
                 if (offHandStack.getItem() instanceof KinsectItem && !glaiveUser.isKinsectDeployed()) {
                     ClientPlayNetworking.send(new Identifier("sapphire-star-armaments", "kinsect_launch_sync"), PacketByteBufs.empty());
@@ -121,7 +122,7 @@ public class ClientTickHandler {
                 }
             }
             else if (glaiveUser.isVaulting()) {
-                if (client.player.isOnGround() && client.player.getVelocity().y <= 0) {
+                if (client.player.isOnGround() && client.player.getVelocity().y <= 0 || client.player.isTouchingWater())  {
                     glaiveUser.setVaulting(false);
                     glaiveUser.setGlaiveAttackTicks(0);
                     glaiveUser.setHasUsedAerialAttack(false);

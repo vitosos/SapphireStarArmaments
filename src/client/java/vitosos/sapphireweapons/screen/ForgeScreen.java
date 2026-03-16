@@ -80,7 +80,7 @@ public class ForgeScreen extends HandledScreen<ForgeScreenHandler> {
         drawCategoryHeader(context, mouseX, mouseY);
         drawSelectedRecipeDetails(context);
 
-        // THE FIX: Only draw the recipe list if the menu is closed!
+        // Only draw the recipe list if the menu is closed!
         if (this.isCategoryMenuOpen) {
             // Push the Z-Index up to 300 so the overlay renders on top of EVERYTHING
             context.getMatrices().push();

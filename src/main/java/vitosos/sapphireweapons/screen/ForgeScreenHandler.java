@@ -73,7 +73,7 @@ public class ForgeScreenHandler extends ScreenHandler {
                     if (!this.insertItem(originalStack, 0, 27, false)) return ItemStack.EMPTY;
                 }
             } else if (invSlot >= 36) {
-                // THE FIX: If they shift-click the shelf, move the weapon to the player's inventory (Slots 0 to 36)
+                // If they shift-click the shelf, move the weapon to the player's inventory (Slots 0 to 36)
                 // The 'true' at the end makes it try to fill the hotbar first!
                 if (!this.insertItem(originalStack, 0, 36, true)) {
                     return ItemStack.EMPTY;

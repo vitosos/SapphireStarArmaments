@@ -7,6 +7,7 @@ import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.util.Identifier;
 import vitosos.sapphireweapons.SapphireStarArmaments;
 import vitosos.sapphireweapons.screen.ForgeScreenHandler;
+import vitosos.sapphireweapons.screen.GuildStockBoxScreenHandler;
 import vitosos.sapphireweapons.screen.ItemBoxScreenHandler;
 
 public class ModScreenHandlers {
@@ -18,6 +19,10 @@ public class ModScreenHandlers {
     public static final ScreenHandlerType<ForgeScreenHandler> FORGE_SCREEN_HANDLER =
             Registry.register(Registries.SCREEN_HANDLER, new Identifier(SapphireStarArmaments.MOD_ID, "forge"),
                     new ScreenHandlerType<>(ForgeScreenHandler::new, net.minecraft.resource.featuretoggle.FeatureFlags.VANILLA_FEATURES));
+
+    public static final ScreenHandlerType<GuildStockBoxScreenHandler> GUILD_STOCK_BOX_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER, new Identifier(SapphireStarArmaments.MOD_ID, "guild_stock_box"),
+                    new ScreenHandlerType<>(GuildStockBoxScreenHandler::new, net.minecraft.resource.featuretoggle.FeatureFlags.VANILLA_FEATURES));
 
     public static void register() {
     }

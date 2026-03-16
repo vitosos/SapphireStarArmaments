@@ -35,11 +35,27 @@ public abstract class PlayerStorageMixin implements ISapphirePlayerData {
     @Override
     public void addSapphirePoints(int amount) { this.sapphirePoints += amount; }
 
+    @Unique
+    private long lastCantineTime = 0L;
+
+    @Override
+    public long getLastCantineTime() {
+        return this.lastCantineTime;
+    }
+
+    @Override
+    public void setLastCantineTime(long time) {
+        this.lastCantineTime = time;
+    }
+
     // --- SAVE TO PLAYER FILE ---
     @Inject(method = "writeCustomDataToNbt", at = @At("TAIL"))
     private void saveCustomData(NbtCompound nbt, CallbackInfo ci) {
         // Save Points
         nbt.putInt("SapphirePoints", this.sapphirePoints);
+
+        // Cantine Timer
+        nbt.putLong("LastCantineTime", this.lastCantineTime);
 
         // Save Inventory
         NbtList nbtList = new NbtList();
@@ -61,6 +77,10 @@ public abstract class PlayerStorageMixin implements ISapphirePlayerData {
         // Load Points
         if (nbt.contains("SapphirePoints")) {
             this.sapphirePoints = nbt.getInt("SapphirePoints");
+        }
+        // Cantine Timer
+        if (nbt.contains("LastCantineTime")) {
+            this.lastCantineTime = nbt.getLong("LastCantineTime");
         }
 
         // Load Inventory

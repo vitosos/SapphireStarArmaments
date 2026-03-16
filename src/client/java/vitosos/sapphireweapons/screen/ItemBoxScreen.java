@@ -151,7 +151,7 @@ public class ItemBoxScreen extends HandledScreen<ItemBoxScreenHandler> {
         ISapphirePlayerData playerData = (ISapphirePlayerData) this.client.player;
 
         // Custom text elements
-        context.drawText(this.textRenderer, "Pts: " + playerData.getSapphirePoints(), 261, 20, 0x55FF55, true);
+        context.drawText(this.textRenderer, playerData.getSapphirePoints() + " Pts", 261, 20, 0x55FF55, true);
         context.drawText(this.textRenderer, "Page: " + (currentPage + 1) + "/3", 10, 25, 0xFFFFFF, true);
 
         // Calculate Sell Grid Value dynamically

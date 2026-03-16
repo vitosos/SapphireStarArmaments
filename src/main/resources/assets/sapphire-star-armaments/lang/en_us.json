@@ -1,6 +1,10 @@
 {
   "_section1": "UI and Others",
 
+  "category.sapphire-star-armaments.combat": "Sapphire Star Combat",
+  "key.sapphire-star-armaments.ultimate": "Weapon Ultimate",
+  "key.sapphire-star-armaments.fire_kinsect": "Fire Kinsect",
+
   "tag.item.sapphire-star-armaments.sapphire_workshop": "Workshop Weapons",
   "tag.item.sapphire-star-armaments.forging_materials": "Forging Materials",
   "tag.item.sapphire-star-armaments.allowed_in_item_box": "Item Box Items",
@@ -13,8 +17,58 @@
   "block.sapphire-star-armaments.guild_stock_box": "Guild Stock Box",
   "block.sapphire-star-armaments.forge": "Sapphire Star Forge",
 
+  "_section2": "Consumables",
 
-  "_section2": "Weapons",
+  "item.sapphire-star-armaments.dust_of_life": "Dust of Life",
+  "item.sapphire-star-armaments.dust_of_life.desc.1": "Heals yourself and nearby allies",
+  "item.sapphire-star-armaments.dust_of_life.desc.2": "for 20% of their max health.",
+  "item.sapphire-star-armaments.dust_of_life.desc.3": "1.5 second on use.",
+  "item.sapphire-star-armaments.dust_of_life.desc.4": "20 block radius.",
+
+  "item.sapphire-star-armaments.lifepowder": "Lifepowder",
+  "item.sapphire-star-armaments.lifepowder.desc.1": "Heals yourself and nearby allies",
+  "item.sapphire-star-armaments.lifepowder.desc.2": "for 10% of their max health.",
+  "item.sapphire-star-armaments.lifepowder.desc.3": "1.5 second to use.",
+  "item.sapphire-star-armaments.lifepowder.desc.4": "20 block radius.",
+
+  "item.sapphire-star-armaments.demon_powder": "Demon Powder",
+  "item.sapphire-star-armaments.demon_powder.desc.1": "Strengthens yourself and nearby",
+  "item.sapphire-star-armaments.demon_powder.desc.2": "allies for 1:30 minutes.",
+  "item.sapphire-star-armaments.demon_powder.desc.3": "1.5 seconds to use.",
+  "item.sapphire-star-armaments.demon_powder.desc.4": "20 block radius.",
+
+  "item.sapphire-star-armaments.hardshell_powder": "Hardshell Powder",
+  "item.sapphire-star-armaments.hardshell_powder.desc.1": "Improves yourself and nearby allies",
+  "item.sapphire-star-armaments.hardshell_powder.desc.2": "defenses for 1:30 minutes.",
+  "item.sapphire-star-armaments.hardshell_powder.desc.3": "1.5 seconds to use.",
+  "item.sapphire-star-armaments.hardshell_powder.desc.4": "20 block radius",
+
+  "item.sapphire-star-armaments.hunter_potion": "Hunter Potion",
+  "item.sapphire-star-armaments.hunter_potion.desc.1": "Restores 15% of your Max HP.",
+  "item.sapphire-star-armaments.hunter_potion.desc.2": "",
+  "item.sapphire-star-armaments.hunter_potion.desc.3": "2 seconds to use.",
+  "item.sapphire-star-armaments.hunter_potion.desc.4": "",
+
+  "item.sapphire-star-armaments.mega_potion": "Mega Potion",
+  "item.sapphire-star-armaments.mega_potion.desc.1": "Restores 30% of your Max HP.",
+  "item.sapphire-star-armaments.mega_potion.desc.2": "",
+  "item.sapphire-star-armaments.mega_potion.desc.3": "2 seconds to use.",
+  "item.sapphire-star-armaments.mega_potion.desc.4": "",
+
+  "item.sapphire-star-armaments.max_potion": "Max Potion",
+  "item.sapphire-star-armaments.max_potion.desc.1": "Fully restores your health",
+  "item.sapphire-star-armaments.max_potion.desc.2": "",
+  "item.sapphire-star-armaments.max_potion.desc.3": "Instant use.",
+  "item.sapphire-star-armaments.max_potion.desc.4": "",
+
+  "item.sapphire-star-armaments.ancient_potion": "Ancient Potion",
+  "item.sapphire-star-armaments.ancient_potion.desc.1": "Fully restores your health",
+  "item.sapphire-star-armaments.ancient_potion.desc.2": "and stamina.",
+  "item.sapphire-star-armaments.ancient_potion.desc.3": "Instant use.",
+  "item.sapphire-star-armaments.ancient_potion.desc.4": "",
+
+
+  "_section3": "Weapons",
 
   "item.sapphire-star-armaments.iron_glaive": "Iron Glaive",
   "item.sapphire-star-armaments.iron_glaive.desc.1": "The first Insect Glaive, forged using  ores from these lands. ",
@@ -53,8 +107,15 @@
   "item.sapphire-star-armaments.blaze_glaive.desc.4": "Empowered by essence with a Kinsect on the off-hand.",
 
   "item.sapphire-star-armaments.kinsect": "Mauldrone",
+  "item.sapphire-star-armaments.kinsect.desc.1": "Equip it on your off-hand to wield",
+  "item.sapphire-star-armaments.kinsect.desc.2": "essences while using a Glaive.",
+  "item.sapphire-star-armaments.kinsect.desc.3": "Launch it by pressing %s to",
+  "item.sapphire-star-armaments.kinsect.desc.4": "harvest essences from hostile mobs",
+  "item.sapphire-star-armaments.kinsect.desc.5": "and empower yourself.",
+  "item.sapphire-star-armaments.kinsect.desc.6": "Press %s to spend your essences",
+  "item.sapphire-star-armaments.kinsect.desc.7": "on a special Kinsect attack.",
 
-  "_section3": "Materials",
+  "_section4": "Materials",
 
   "item.sapphire-star-armaments.primal_gland": "Primal Gland",
   "item.sapphire-star-armaments.primal_gland.desc": "A strong venom sac harvested from a Spider.",
@@ -83,6 +144,24 @@
   "item.sapphire-star-armaments.flame_soul": "Flame Soul",
   "item.sapphire-star-armaments.flame_soul.desc": "A fragment of fire, said to be what drives a Blaze.",
 
-  "_section4": "Subtitles",
-  "sound.sapphire-star-armaments.item_box_open": "Item Box opens"
+  "_section5": "Subtitles",
+  "sound.sapphire-star-armaments.item_box_open": "Item Box opens",
+  "cantine.sapphire-star-armaments.hunter_prepare": "Something is brewing...",
+
+  "_section6": "Cantine",
+
+  "cantine.sapphire-star-armaments.sugary_bee_apples": "Sugary Bee Apples",
+  "cantine.sapphire-star-armaments.sugary_bee_apples.desc": "The Research Commission has deemed both the fruits and honey in this region are specially sweet, reaching a perfect sweet-spot before being too much for anyone's taste. \u00A7a\u00A7o-Haste I-\u00A7r",
+
+  "cantine.sapphire-star-armaments.fiery_lava_chicken": "Fiery Lava Chicken",
+  "cantine.sapphire-star-armaments.fiery_lava_chicken.desc": "The Guild just had to add it to the menu. \u00A7a\u00A7o-Fire Resistance & Health Boost III-\u00A7r",
+
+  "cantine.sapphire-star-armaments.hearty_beef": "Hearty & Saucy Beef",
+  "cantine.sapphire-star-armaments.hearty_beef.desc": "The Guild highly recommends this dish for any hunter who is departing on a lengthy and dangerous expedition \u00A7a\u00A7o-Regeneration I-\u00A7r",
+
+  "cantine.sapphire-star-armaments.lucky_fish_salad": "Lucky Fish Salad",
+  "cantine.sapphire-star-armaments.lucky_fish_salad.desc": "The Argosy's crew most popular exported dish. Very popular among Moga Village's fishermen, bringing a season of abundance along with it's flavour. \u00A7a\u00A7o-Luck III-\u00A7r",
+
+  "cantine.sapphire-star-armaments.special_ration": "Special Ration",
+  "cantine.sapphire-star-armaments.special_ration.desc": "The Guild requested to their Master Chefs to prepare special rations for starting hunters who can't just yet pay for more elaborate dishes. Tasty and cheap, it couldn't get any better. \u00A7a\u00A7o-No Effect-\u00A7r"
 }

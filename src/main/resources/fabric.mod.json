@@ -21,6 +21,9 @@
 		],
 		"client": [
 			"vitosos.sapphireweapons.SapphireStarArmamentsClient"
+		],
+		"modmenu": [
+			"vitosos.sapphireweapons.config.ModMenuIntegration"
 		]
 	},
 	"mixins": [

@@ -80,7 +80,8 @@ public abstract class PlayerCombatMixin implements IInsectGlaiveUser {
                     vitosos.sapphireweapons.entity.KinsectEntity kinsect = new vitosos.sapphireweapons.entity.KinsectEntity(player.getWorld(), player, kinsectItem.getKinsectDamage() * 2.0f);
                     kinsect.setItem(offHandStack);
                     kinsect.setNuke(true);
-                    kinsect.setVelocity(player, player.getPitch(), player.getYaw(), 0.0f, 2.5f, 0.0f);
+                    net.minecraft.util.math.Vec3d look = player.getRotationVector();
+                    kinsect.setVelocity(look.x, look.y, look.z, 2.5f, 0.0f);
                     player.getWorld().spawnEntity(kinsect);
                     player.getWorld().playSound(null, player.getX(), player.getY(), player.getZ(), net.minecraft.sound.SoundEvents.ENTITY_ENDER_DRAGON_SHOOT, net.minecraft.sound.SoundCategory.PLAYERS, 1.0f, 1.5f);
                 }
@@ -110,9 +111,18 @@ public abstract class PlayerCombatMixin implements IInsectGlaiveUser {
                     // 3. Combine and apply the 80% aerial modifier
                     float aerialDmg = (baseDmg + enchantDmg) * 0.8f;
 
-                    // THE FIX: Apply custom effects (like Fire) BEFORE dealing damage!
+                    // Apply custom effects (like Fire) BEFORE dealing damage
                     if (mainHandStack.getItem() instanceof vitosos.sapphireweapons.item.InsectGlaiveItem glaive) {
                         glaive.applyCustomEffects(mainHandStack, livingTarget, player);
+                    }
+
+                    // --- AERIAL SHIELD BREAK LOGIC ---
+                    if (livingTarget instanceof PlayerEntity targetPlayer && targetPlayer.isBlocking()) {
+                        // Put their shield on a 5-second (100 tick) cooldown
+                        targetPlayer.getItemCooldownManager().set(targetPlayer.getActiveItem().getItem(), 100);
+                        targetPlayer.clearActiveItem();
+                        // Tell the server to play the shield-break sound and particles!
+                        player.getWorld().sendEntityStatus(targetPlayer, (byte) 30);
                     }
 
                     // 4. Deal the damage

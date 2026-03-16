@@ -1,5 +1,6 @@
 package vitosos.sapphireweapons.registry;
 
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -9,9 +10,24 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import vitosos.sapphireweapons.SapphireStarArmaments;
 import vitosos.sapphireweapons.item.*;
-import net.minecraft.util.Rarity; // Add this to your imports!
+import net.minecraft.util.Rarity;
+
+import static software.bernie.example.registry.ItemRegistry.registerItem;
 
 public class ModItems {
+
+    // --- POTIONS ---
+    public static final Item HUNTER_POTION = new PercentagePotionItem(new FabricItemSettings().maxCount(10), 0.15f, 40, false, "hunter_drink");
+    public static final Item MEGA_POTION = new PercentagePotionItem(new FabricItemSettings().maxCount(10), 0.30f, 40, false, "hunter_drink");
+
+    public static final Item MAX_POTION = new PercentagePotionItem(new FabricItemSettings().maxCount(2), 1.0f, 20, false, "hunter_consume");
+    public static final Item ANCIENT_POTION = new PercentagePotionItem(new FabricItemSettings().maxCount(1), 1.0f, 20, true, "hunter_consume");
+
+    // --- POWDERS ---
+    public static final Item DEMON_POWDER = new AreaPowderItem(new FabricItemSettings().maxCount(3), 0.0f, "demon");
+    public static final Item HARDSHELL_POWDER = new AreaPowderItem(new FabricItemSettings().maxCount(3), 0.0f, "hardshell");
+    public static final Item LIFEPOWDER = new AreaPowderItem(new FabricItemSettings().maxCount(3), 0.10f, "life");
+    public static final Item DUST_OF_LIFE = new AreaPowderItem(new FabricItemSettings().maxCount(2), 0.20f, "dust_of_life");
 
     // --- GLAIVES ---
     public static final InsectGlaiveItem IRON_GLAIVE = new InsectGlaiveItem(ToolMaterials.IRON, 1, -2.4f, new Item.Settings());
@@ -43,6 +59,18 @@ public class ModItems {
 
     public static void register() {
         // Register Items
+
+        // Potions
+        Registry.register(Registries.ITEM, new Identifier(SapphireStarArmaments.MOD_ID, "hunter_potion"), HUNTER_POTION);
+        Registry.register(Registries.ITEM, new Identifier(SapphireStarArmaments.MOD_ID, "mega_potion"), MEGA_POTION);
+        Registry.register(Registries.ITEM, new Identifier(SapphireStarArmaments.MOD_ID, "max_potion"), MAX_POTION);
+        Registry.register(Registries.ITEM, new Identifier(SapphireStarArmaments.MOD_ID, "ancient_potion"), ANCIENT_POTION);
+
+        // Powders
+        Registry.register(Registries.ITEM, new Identifier(SapphireStarArmaments.MOD_ID, "demon_powder"), DEMON_POWDER);
+        Registry.register(Registries.ITEM, new Identifier(SapphireStarArmaments.MOD_ID, "hardshell_powder"), HARDSHELL_POWDER);
+        Registry.register(Registries.ITEM, new Identifier(SapphireStarArmaments.MOD_ID, "lifepowder"), LIFEPOWDER);
+        Registry.register(Registries.ITEM, new Identifier(SapphireStarArmaments.MOD_ID, "dust_of_life"), DUST_OF_LIFE);
 
         // Glaive
         Registry.register(Registries.ITEM, new Identifier(SapphireStarArmaments.MOD_ID, "iron_glaive"), IRON_GLAIVE);

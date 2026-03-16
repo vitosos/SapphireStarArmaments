@@ -18,6 +18,7 @@ import vitosos.sapphireweapons.item.KinsectItemRenderer;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import vitosos.sapphireweapons.registry.ModScreenHandlers;
 import vitosos.sapphireweapons.screen.ForgeScreen;
+import vitosos.sapphireweapons.screen.GuildStockBoxScreen;
 import vitosos.sapphireweapons.screen.ItemBoxScreen;
 import net.fabricmc.fabric.api.client.model.loading.v1.ModelLoadingPlugin;
 import net.minecraft.util.Identifier;
@@ -64,5 +65,6 @@ public class SapphireStarArmamentsClient implements ClientModInitializer {
 		ClientTickHandler.register();
 		HandledScreens.register(ModScreenHandlers.ITEM_BOX_SCREEN_HANDLER, ItemBoxScreen::new);
 		HandledScreens.register(ModScreenHandlers.FORGE_SCREEN_HANDLER, ForgeScreen::new);
+		HandledScreens.register(ModScreenHandlers.GUILD_STOCK_BOX_SCREEN_HANDLER, GuildStockBoxScreen::new);
 	}
 }

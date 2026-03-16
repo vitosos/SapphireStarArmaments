@@ -29,6 +29,12 @@ public class InsectGlaiveItem extends SwordItem {
         super(toolMaterial, attackDamage, attackSpeed, settings);
     }
 
+    // Disable Vanilla Anvil Repairs
+    @Override
+    public boolean canRepair(ItemStack stack, ItemStack ingredient) {
+        return false;
+    }
+
     // Tells the game how long the right-click action can be held (72000 is standard max)
     @Override
     public int getMaxUseTime(ItemStack stack) {
